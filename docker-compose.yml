@@ -1,0 +1,41 @@
+version: "3.2"
+services:
+    ecommerce:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        container_name: ecommerce
+        networks:
+          ecommerce_net:
+            ipv4_address: 172.172.202.100
+        volumes:
+            - ./:/usr/src/app
+        links:
+            - ecommerce-mariadb-10.1
+        tty: true
+        ports:
+          - '8080:80'
+
+    ecommerce-mariadb-10.1:
+        image: mariadb:10.1
+        container_name: ecommerce-mariadb-10.1
+        networks:
+          ecommerce_net:
+            ipv4_address: 172.172.202.101
+        volumes:
+            - ./.docker/db_data:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=zoran
+            - MYSQL_DATABASE=ecommerce
+            - MYSQL_USER=zoran
+            - MYSQL_PASSWORD=zoran
+            - MYSQL_ROOT_HOST=0.0.0.0
+        ports:
+          - '4306:3306'
+networks:
+  ecommerce_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.172.202.0/24
