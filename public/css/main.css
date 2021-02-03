@@ -2,15 +2,60 @@
 .nab-bar-kids-margin-right { margin-right: 350px; }
 .nab-bar-collection-margin-left { margin-left: 280px; }
 
+.div-big-image {
+    position: relative;
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 50px 40px 40px;
+    float: left;
+}
+
+.div-small-image {
+    position: relative;
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 50px 40px 40px;
+    float: left;
+}
+
+.div-small-image-pl { padding-left: 15px; }
+
+.custom-select-class {
+    width: 100%;
+    background: none;
+    border: none;
+
+}
+
+.div-custom-select-class { margin-top: 100px; }
+
+.margin-top-100 { margin-top: 100px; }
+
 @media (max-width: 1200px) {
     .nab-bar-kids-margin-right { margin-right: 250px; }
     .nab-bar-collection-margin-left { margin-left: 190px; }
+    .div-small-image-pl { padding-left: 15px; }
 } /* - end @media (max-width:1200px) */
 
 @media (max-width: 991px) {
     .nab-bar-kids-margin-right { margin-right: 170px; }
     .nab-bar-collection-margin-left { margin-left: 0; }
 } /* - end @media (max-width:991px) */
+
+@media (max-width: 767px) {
+    .div-custom-select-class { margin-top: 0; }
+    .div-small-image {
+        float: none;
+    }
+} /* - end @media (max-width:767px) */
 
 @media(max-width:575px) {
     .nab-bar-kids-margin-right { margin-right: 100px; }
