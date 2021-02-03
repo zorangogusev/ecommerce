@@ -1,3 +1,17 @@
-/*body {*/
-/*    background: yellow;*/
-/*}*/
+.bg-color-fff { background-color: #FFF !important; }
+.nab-bar-kids-margin-right { margin-right: 350px; }
+.nab-bar-collection-margin-left { margin-left: 280px; }
+
+@media (max-width: 1200px) {
+    .nab-bar-kids-margin-right { margin-right: 250px; }
+    .nab-bar-collection-margin-left { margin-left: 190px; }
+} /* - end @media (max-width:1200px) */
+
+@media (max-width: 991px) {
+    .nab-bar-kids-margin-right { margin-right: 170px; }
+    .nab-bar-collection-margin-left { margin-left: 0; }
+} /* - end @media (max-width:991px) */
+
+@media(max-width:575px) {
+    .nab-bar-kids-margin-right { margin-right: 100px; }
+} /* - end @media (max-width:575px) */
