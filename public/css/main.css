@@ -78,6 +78,32 @@
 
 .footer-div-third-margin-right { margin-right: 550px; }
 
+.product-main-div {
+    border: 1px solid #F7F7F5;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.product-div {
+    position: relative;
+}
+
+.product-info {
+    position: relative;
+}
+
+.div-for-image {
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px solid #fff;
+    outline: 1px solid #DDd;
+    margin: 15px auto 0 auto;
+}
+
 @media (max-width: 1200px) {
     .nab-bar-kids-margin-right { margin-right: 250px; }
     .nab-bar-collection-margin-left { margin-left: 190px; }
