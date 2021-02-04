@@ -62,6 +62,7 @@
     float: left;
     max-width: 500px;
     padding-top: 40px;
+    padding-left: 30px;
 }
 
 .footer-div-middle-third-div {
@@ -104,6 +105,8 @@
     margin: 15px auto 0 auto;
 }
 
+.float-none { float: none !important; }
+
 @media (max-width: 1200px) {
     .nab-bar-kids-margin-right { margin-right: 250px; }
     .nab-bar-collection-margin-left { margin-left: 190px; }
@@ -117,6 +120,14 @@
     .nab-bar-collection-margin-left { margin-left: 0; }
     .footer-div-middle { min-height: 520px; }
     .footer-div-third-margin-right { margin-right: 100px; }
+    .div-footer-image { float: none; }
+
+    .footer-div-middle-second-div {
+        float: none;
+        max-width: 900px;
+        padding-top: 40px;
+        padding-left: 0;
+    }
 } /* - end @media (max-width:991px) */
 
 @media (max-width: 767px) {

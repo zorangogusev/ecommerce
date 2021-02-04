@@ -21,10 +21,6 @@ sudo docker-compose up -d --build
 
     ecommerce.deb.test
 
-### To run test
-
-    php bin/phpunit tests/UnitTests/HomeTest
-
 ### If necessary to revert all migration
 
     php bin/console doctrine:migrations:migrate first -n

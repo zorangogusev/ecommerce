@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2843c2c5-ea0e-4b17-9a6d-cf03903bed7e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/view-product.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/view-product.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/_footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_footer.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +111,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../forum" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pizzashop" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -136,7 +140,8 @@
       <workItem from="1612377150548" duration="17640000" />
       <workItem from="1612429863963" duration="21870000" />
       <workItem from="1612460975265" duration="16000" />
-      <workItem from="1612462580007" duration="1567000" />
+      <workItem from="1612462580007" duration="1676000" />
+      <workItem from="1612465961837" duration="6378000" />
     </task>
     <task id="LOCAL-00001" summary="README.md file">
       <created>1612374706551</created>
@@ -236,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612454659846</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary=".env file">
+      <created>1612464227756</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1612464227756</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +282,8 @@
     <MESSAGE value="Connection to database .env" />
     <MESSAGE value="Create index page and new page to display product" />
     <MESSAGE value="Readme.md file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme.md file" />
+    <MESSAGE value=".env file" />
+    <option name="LAST_COMMIT_MESSAGE" value=".env file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

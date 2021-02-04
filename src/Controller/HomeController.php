@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\ProductAttributesRepository;
 use App\Repository\ProductRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -24,8 +25,14 @@ class HomeController extends AbstractController
     /**
      * @Route("/view/{id?}", name="view")
      */
-    public function view(): Response
+    public function view($id, ProductRepository $productRepository, ProductAttributesRepository $productAttributesRepository): Response
     {
-        return $this->render('home/view-product.html.twig');
+        $product = $productRepository->find($id);
+        $productAttributes = $productAttributesRepository->findBy(['product_id' => $id]);
+
+        return $this->render('home/view-product.html.twig', [
+            'product' => $product,
+            'productAttributes' => $productAttributes
+        ]);
     }
 }
