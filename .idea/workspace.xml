@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2843c2c5-ea0e-4b17-9a6d-cf03903bed7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/UnitTests/HomeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="2843c2c5-ea0e-4b17-9a6d-cf03903bed7e" name="Default Changelist" comment="Create Ent">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210204103343.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210204103837.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210204104101.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version99999999999999.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/ProductAttributes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pizzashop" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -141,7 +140,7 @@
       <updated>1612350536817</updated>
       <workItem from="1612350538031" duration="18308000" />
       <workItem from="1612377150548" duration="17640000" />
-      <workItem from="1612429863963" duration="2210000" />
+      <workItem from="1612429863963" duration="6775000" />
     </task>
     <task id="LOCAL-00001" summary="README.md file">
       <created>1612374706551</created>
@@ -192,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612395678199</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Install symfony/phpunit-bridge test">
+      <created>1612433534651</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612433534651</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +214,8 @@
     <MESSAGE value="Navbar" />
     <MESSAGE value="Template page" />
     <MESSAGE value="Footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Footer" />
+    <MESSAGE value="Install symfony/phpunit-bridge test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Install symfony/phpunit-bridge test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
