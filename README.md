@@ -1,14 +1,13 @@
 
 git clone https://github.com/zorangogusev/ecommerce.git ecommerce
 
-sudo docker-compose up -d --build
-
-
 cd ecommerce
 
 composer install
 
 mkdir .docker/db_data
+
+sudo docker-compose up -d --build
 
 ### Execute the migration and seed data in tables
 
