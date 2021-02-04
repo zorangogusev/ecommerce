@@ -1,13 +1,10 @@
 
 git clone https://github.com/zorangogusev/ecommerce.git ecommerce
+sudo docker-compose up -d --build
 
 cd ecommerce
-
 composer install
-
 mkdir .docker/db_data
-
-sudo docker-compose up -d --build
 
 ### Execute the migration and seed data in tables
 
@@ -28,12 +25,3 @@ sudo docker-compose up -d --build
 ### If necessary to revert all migration
 
     php bin/console doctrine:migrations:migrate first -n
-
-### If necessary to enter in ecommerce container
-
-    sudo docker exec -it ecommerce /bin/bash
-
-### If necessary to enter in ecommerce-mariadb-10.1 container
-
-    sudo docker exec -it ecommerce-mariadb-10.1 /bin/bash
-

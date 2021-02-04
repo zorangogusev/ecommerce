@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2843c2c5-ea0e-4b17-9a6d-cf03903bed7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/home/view-product.html.twig" afterDir="false" />
+    <list default="true" id="2843c2c5-ea0e-4b17-9a6d-cf03903bed7e" name="Default Changelist" comment="Create index page and new page to display product">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +133,7 @@
       <updated>1612350536817</updated>
       <workItem from="1612350538031" duration="18308000" />
       <workItem from="1612377150548" duration="17640000" />
-      <workItem from="1612429863963" duration="20269000" />
+      <workItem from="1612429863963" duration="21521000" />
     </task>
     <task id="LOCAL-00001" summary="README.md file">
       <created>1612374706551</created>
@@ -218,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612442453294</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Create index page and new page to display product">
+      <created>1612453317035</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1612453317035</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +250,8 @@
     <MESSAGE value="Create entity and migration for category, product, product_attributes, and migration for seeding in database" />
     <MESSAGE value="Repositories for category, product and product_attributes" />
     <MESSAGE value="Connection to database .env" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connection to database .env" />
+    <MESSAGE value="Create index page and new page to display product" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create index page and new page to display product" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

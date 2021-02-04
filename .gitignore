@@ -10,7 +10,7 @@
 ###< symfony/framework-bundle ###
 
 /README-2.md
-/.docker/db_data
+.git-ignore /.docker/db_data/**
 
 ###> symfony/phpunit-bridge ###
 .phpunit
