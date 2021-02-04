@@ -1,10 +1,13 @@
 
+git clone https://github.com/zorangogusev/ecommerce.git ecommerce
+
+cd ecommerce
+
 composer install
 
 mkdir .docker/db_data
 
 sudo docker-compose up -d --build
-
 
 ### Add in /etc/hosts file
 
@@ -21,3 +24,7 @@ sudo docker-compose up -d --build
 ### If necessary to enter in ecommerce-mariadb-10.1 container
 
     sudo docker exec -it ecommerce-mariadb-10.1 /bin/bash
+
+### To run test 
+    
+    php bin/phpunit tests/UnitTests/HomeTest
