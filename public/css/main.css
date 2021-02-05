@@ -107,6 +107,13 @@
 
 .float-none { float: none !important; }
 
+.container-for-random-products:hover { background: #f8f9fa; }
+
+.container-for-random-products a {
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+}
+
 @media (max-width: 1200px) {
     .nab-bar-kids-margin-right { margin-right: 250px; }
     .nab-bar-collection-margin-left { margin-left: 190px; }

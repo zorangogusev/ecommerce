@@ -95,57 +95,23 @@
         <div class="row margin-top-100 text-center">
             <p class="col-md-12">YOU MAY ALSO LIKE THIS</p>
             <div class="clearfix"></div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-12 div-small-image-pl">
-                        <div class="div-small-image mx-auto float-none" style="background-image:url('/images/image-2.jpeg')"></div>
+            {% for product in youMyAlsoLikeProducts %}
+            <div class="col-md-3 container-for-random-products pt-3">
+                <a href="{{ path('view', { id: product.id }) }}">
+                    <div class="row">
+                        <div class="col-12 div-small-image-pl">
+                            <div class="div-small-image mx-auto float-none" style="background-image:url('/images/{{ product.image }}')"></div>
+                        </div>
+                        <div class="col-12 ">
+                            <p>{{ product.name }}</p>
+                            <p>{{ product.description }}</p>
+                        </div>
                     </div>
-                    <div class="col-12 ">
-                        <p>Blask Shirt</p>
-                        <p>GIRL BOSS BLACK LOOSE T-SHIRT</p>
-                        <p class="text-center">34.00</p>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-12 div-small-image-pl">
-                        <div class="div-small-image mx-auto float-none" style="background-image:url('/images/image-3.jpg')"></div>
-                    </div>
-                    <div class="col-12 ">
-                        <p>Blask Shirt</p>
-                        <p>GIRL BOSS BLACK LOOSE T-SHIRT</p>
-                        <p class="text-center">34.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-12 div-small-image-pl">
-                        <div class="div-small-image mx-auto float-none" style="background-image:url('/images/image-4.jpg')"></div>
-                    </div>
-                    <div class="col-12 ">
-                        <p>Blask Shirt</p>
-                        <p>GIRL BOSS BLACK LOOSE T-SHIRT</p>
-                        <p class="text-center">34.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-12 div-small-image-pl">
-                        <div class="div-small-image mx-auto float-none" style="background-image:url('/images/image-5.jpg')"></div>
-                    </div>
-                    <div class="col-12 ">
-                        <p>Blask Shirt</p>
-                        <p>GIRL BOSS BLACK LOOSE T-SHIRT</p>
-                        <p class="text-center">34.00</p>
-                    </div>
-                </div>
-            </div>
-
+            {% endfor %}
         </div>
-    </div> <!-- main divj -->
+    </div> <!-- main div -->
 
 
 {% endblock %}
