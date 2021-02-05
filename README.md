@@ -3,9 +3,9 @@ git clone https://github.com/zorangogusev/ecommerce.git ecommerce
 
 cd ecommerce
 
-composer install
+rename file .env.example to .env
 
-mkdir .docker/db_data
+composer install
 
 sudo docker-compose up -d --build
 

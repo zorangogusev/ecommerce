@@ -12,6 +12,7 @@
 /README-2.md
 /.docker/db_data/**
 /.idea/**
+/.env
 
 ###> symfony/phpunit-bridge ###
 .phpunit
