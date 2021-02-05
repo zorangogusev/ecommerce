@@ -23,7 +23,9 @@ class ProductRepository extends ServiceEntityRepository
     public function findYouMyAlsoLikeProducts($mainProduct)
     {
         return $this->createQueryBuilder('p')
-            ->andWhere('p.id != ' . $mainProduct)
+            ->andWhere('p.id != ' . $mainProduct->getId())
+            ->andWhere('p.category_id = ' . $mainProduct->getCategoryId())
+            ->setMaxResults(4)
             ->getQuery()
             ->getResult(Query::HYDRATE_ARRAY)
             ;

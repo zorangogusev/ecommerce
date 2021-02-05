@@ -36,6 +36,13 @@ final class Version99999999999999 extends AbstractMigration
         $this->addSql('INSERT INTO product (id, category_id, name, description, image, created_at) VALUES (5, 1, "Shirt-5", "Orange Shirt", "image-5.jpg", "' . $date . '" );');
         $this->addSql('INSERT INTO product (id, category_id, name, description, image, created_at) VALUES (6, 1, "Shirt-6", "Purpple Shirt", "image-6.jpeg", "' . $date . '" );');
         $this->addSql('INSERT INTO product (id, category_id, name, description, image, created_at) VALUES (7, 1, "Shirt-1", "Blue Shirt", "image-7.jpeg", "' . $date . '" );');
+
+
+        $this->addSql('INSERT INTO product (id, category_id, name, description, image, created_at) VALUES (8, 2, "Costume-8", "Blue Costume", "image-8.jpg", "' . $date . '" );');
+        $this->addSql('INSERT INTO product (id, category_id, name, description, image, created_at) VALUES (9, 2, "Costume-9", "White Costume", "image-9.jpeg", "' . $date . '" );');
+        $this->addSql('INSERT INTO product (id, category_id, name, description, image, created_at) VALUES (10, 2, "Costume-10", "Yellow Costume", "image-10.jpg", "' . $date . '" );');
+        $this->addSql('INSERT INTO product (id, category_id, name, description, image, created_at) VALUES (11, 2, "Costume-11", "Green Costume", "image-11.jpg", "' . $date . '" );');
+        $this->addSql('INSERT INTO product (id, category_id, name, description, image, created_at) VALUES (12, 2, "Costume-12", "Orange Costume", "image-12.jpeg", "' . $date . '" );');
         /** End Insert data in product table */
 
 
@@ -54,6 +61,19 @@ final class Version99999999999999 extends AbstractMigration
         $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (12, 6, "XXL", 20, "' . $date . '" );');
         $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (13, 7, "M", 10, "' . $date . '" );');
         $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (14, 7, "XXL", 20, "' . $date . '" );');
+
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (15, 8, "M", 10, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (16, 8, "XXL", 20, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (17, 9, "M", 10, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (18, 9, "XXL", 20, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (19, 9, "M", 10, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (20, 9, "XXL", 20, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (21, 10, "M", 10, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (22, 10, "XXL", 20, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (23, 11, "M", 10, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (24, 11, "XXL", 20, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (25, 12, "M", 10, "' . $date . '" );');
+        $this->addSql('INSERT INTO product_attributes (id, product_id, size, price, created_at) VALUES (26, 12, "XXL", 20, "' . $date . '" );');
         /** End Insert data in product attributes table */
 
 

@@ -29,9 +29,7 @@ class HomeController extends AbstractController
     {
         $product = $productRepository->find($id);
         $productAttributes = $productAttributesRepository->findBy(['product_id' => $id]);
-        $youMyAlsoLikeProducts = $productRepository->findYouMyAlsoLikeProducts($product->getId());
-        shuffle($youMyAlsoLikeProducts);
-        $youMyAlsoLikeProducts = array_slice($youMyAlsoLikeProducts, 0, 4);
+        $youMyAlsoLikeProducts = $productRepository->findYouMyAlsoLikeProducts($product);
 
         return $this->render('home/view-product.html.twig', [
             'product' => $product,
