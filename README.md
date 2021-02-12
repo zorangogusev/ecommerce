@@ -13,9 +13,13 @@ sudo docker-compose up -d --build
 
     php bin/console doctrine:migrations:migrate
 
+### Add in hosts file
+
+    172.172.202.100    ecommerce.deb.test
+
 ### To open project in the browser enter in browser 
 
-    http://localhost:8080/
+    http://ecommerce.deb.test
 
 ### If necessary to revert all migration
 
