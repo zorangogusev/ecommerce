@@ -30,7 +30,7 @@ sudo docker-compose up -d --build
 
 ### To open project in the browser enter in browser 
 
-    http://ecommerce.deb.test
+    http://ecommerce.test
 
 ### If necessary to revert all migration
 
