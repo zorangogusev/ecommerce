@@ -1,3 +1,14 @@
+### Small project created on given photo and instructions
+[example_photo_link](https://github.com/zorangogusev/ecommerce/blob/master/example-image.png)
+
+### Used Technologies
+    
+    Docker(PHP8.0, Maria-DB-10.1), HTML, CSS, Symhony5.2
+
+### Live demo on Heroku
+[http://app-ecommerce-project.herokuapp.com/](http://app-ecommerce-project.herokuapp.com/)
+
+### Installation
 
 git clone https://github.com/zorangogusev/ecommerce.git ecommerce
 
@@ -15,7 +26,7 @@ sudo docker-compose up -d --build
 
 ### Add in hosts file
 
-    172.172.202.100    ecommerce.deb.test
+    172.172.210.100    ecommerce.test
 
 ### To open project in the browser enter in browser 
 
