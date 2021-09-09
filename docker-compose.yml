@@ -2,14 +2,14 @@ version: "3.2"
 services:
     ecommerce:
         build:
-            context: ./
+            context: .docker/dev
             dockerfile: Dockerfile
         container_name: ecommerce
         networks:
           ecommerce_net:
-            ipv4_address: 172.172.202.100
+            ipv4_address: 172.172.210.100
         volumes:
-            - ./:/usr/src/app
+            - ./:/var/www/html/ecommerce
         links:
             - ecommerce-mariadb-10.1
         tty: true
@@ -21,7 +21,7 @@ services:
         container_name: ecommerce-mariadb-10.1
         networks:
           ecommerce_net:
-            ipv4_address: 172.172.202.101
+            ipv4_address: 172.172.210.101
         volumes:
             - ./.docker/db_data:/var/lib/mysql
         environment:
@@ -38,4 +38,4 @@ networks:
     ipam:
       driver: default
       config:
-      - subnet: 172.172.202.0/24
+      - subnet: 172.172.210.0/24

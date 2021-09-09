@@ -38,11 +38,11 @@ ENV APACHE_LOCK_DIR /var/lock/apache2
 ENV APACHE_PID_FILE /var/run/apache2.pid
 
 # APACHE PHP Project settings
-ADD .docker/dev/20-xdebug.ini /etc/php/8.0/apache2/conf.d/20-xdebug.ini
-ADD .docker/dev/20-xdebug.ini /etc/php/8.0/cli/conf.d/20-xdebug.ini
+ADD 20-xdebug.ini /etc/php/8.0/apache2/conf.d/20-xdebug.ini
+ADD 20-xdebug.ini /etc/php/8.0/cli/conf.d/20-xdebug.ini
 
 # enable the site
-ADD .docker/dev/ecommerce.conf /etc/apache2/sites-available/ecommerce.conf
+ADD ecommerce.conf /etc/apache2/sites-available/ecommerce.conf
 RUN a2ensite ecommerce.conf
 
 # Expose apache.
@@ -58,7 +58,7 @@ RUN echo "root:zoran" | chpasswd
 # Supervisor
 
 RUN mkdir -p /var/log/supervisor
-COPY .docker/dev/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 #PROJECT SPECIFIC
 ENV XDEBUG_CONFIG "idekey=PHPSTORM"
